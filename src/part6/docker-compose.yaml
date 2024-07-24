@@ -1,0 +1,10 @@
+services:
+  server:
+    stop_grace_period: 1s
+    build: ../
+  nginx:
+    stop_grace_period: 1s
+    build: .
+    ports:
+      - 80:8080
+      
